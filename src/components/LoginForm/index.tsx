@@ -1,17 +1,17 @@
-import { LockClosedIcon } from '@heroicons/react/solid'
-import { Formik } from 'formik'
-import * as Yup from 'yup'
+import { LockClosedIcon } from "@heroicons/react/solid";
+import { Formik } from "formik";
+import * as Yup from "yup";
 const validationSchema = Yup.object({
   email: Yup.string()
-    .required('Le champ e-mail est obligatoire')
-    .email('Veuillez fournir un email valide'),
-  password: Yup.string().required('Le champ password est obligatoire'),
-})
+    .required("Le champ e-mail est obligatoire")
+    .email("Veuillez fournir un email valide"),
+  password: Yup.string().required("Le champ password est obligatoire"),
+});
 type loginProps = {
-  handleLogin?: any
-  error?: any
-  loading?: boolean
-}
+  handleLogin?: any;
+  error?: any;
+  loading?: boolean;
+};
 const Loginform = ({ handleLogin, error, loading }: loginProps) => {
   return (
     <>
@@ -30,9 +30,9 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
               </span>
             </h2>
             <p className="mt-2 text-sm text-center text-gray-600">
-              Ou{' '}
+              Ou{" "}
               <a
-                href="#"
+                href="/essaie"
                 className="font-medium text-indigo-600 hover:text-indigo-500"
               >
                 essayer gratuitement pendant 14jours
@@ -41,7 +41,7 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
           </div>
 
           <Formik
-            initialValues={{ email: '', password: '' }}
+            initialValues={{ email: "", password: "" }}
             validationSchema={validationSchema}
             onSubmit={async (values) => handleLogin(values)}
           >
@@ -114,7 +114,7 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
 
                   <div className="text-sm">
                     <a
-                      href="#"
+                      href="/forgot-password"
                       className="font-medium text-indigo-600 hover:text-indigo-500"
                     >
                       Mot de passe oublie ?
@@ -147,6 +147,6 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
         </div>
       </div>
     </>
-  )
-}
-export default Loginform
+  );
+};
+export default Loginform;

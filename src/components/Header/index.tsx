@@ -1,8 +1,5 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { getToken } from '../../api/User'
-import { useEffect, useState } from 'react'
-import { Button } from '@mui/material'
+import React from "react";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -64,6 +61,6 @@ const Header = () => {
         </nav>
       </div>
     </>
-  )
-}
-export default Header
+  );
+};
+export default Header;

@@ -34,16 +34,16 @@ const Pricing = () => {
               </div>
               <div className="pt-10 rounded-md shadow">
                 <a
-                  href="#"
+                  href="/buy"
                   className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                 >
                   Acheter
                 </a>
               </div>
             </div>
-            <div className="mt-8 mt-auto mb-8 text-center">
+            <div className="mt-8 mb-8 text-center">
               <a
-                href="#"
+                href="buy"
                 className="inline-block px-6 py-4 text-white rounded bg-green hover:bg-green-darker hover:text-white hover:no-underline"
               >
                 Sign Up
@@ -55,7 +55,7 @@ const Pricing = () => {
               Argent
             </div>
             <div className="w-full text-sm border-0 border-t border-solid border-grey-light">
-              <div className="py-4 font-semibold text-center font-extralight p-5  text-white border-0 border-b border-solid text-md border-grey-light">
+              <div className="py-4 text-center font-extralight p-5  text-white border-0 border-b border-solid text-md border-grey-light">
                 Recrutement (Conception de l’offre d’emploi, Publication des
                 offres, Visualisation, test, interview et sélection.)
               </div>
@@ -97,7 +97,7 @@ const Pricing = () => {
             </div>
             <div className="pt-10 rounded-md shadow">
               <a
-                href="#"
+                href="/buy"
                 className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:text-white hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
               >
                 Acheter
@@ -105,7 +105,7 @@ const Pricing = () => {
             </div>
             <div className="w-full mt-auto mb-8 text-center">
               <a
-                href="#"
+                href="buy"
                 className="inline-block px-6 py-4 text-white rounded bg-green hover:bg-green-darker hover:text-white hover:no-underline"
               >
                 Sign Up
@@ -137,7 +137,7 @@ const Pricing = () => {
 
             <div className="pt-10 rounded-md shadow">
               <a
-                href="#"
+                href="/buy"
                 className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
               >
                 Acheter
@@ -145,7 +145,7 @@ const Pricing = () => {
             </div>
             <div className="pt-8 mt-auto mb-8 text-center">
               <a
-                href="#"
+                href="/register"
                 className="inline-block px-6 py-4 text-white rounded bg-green hover:bg-green-darker hover:text-white hover:no-underline"
               >
                 Sign Up

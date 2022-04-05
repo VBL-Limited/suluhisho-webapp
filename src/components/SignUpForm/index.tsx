@@ -1,19 +1,19 @@
-import { LockClosedIcon } from '@heroicons/react/solid'
-import { Formik } from 'formik'
-import * as Yup from 'yup'
+import { LockClosedIcon } from "@heroicons/react/solid";
+import { Formik } from "formik";
+import * as Yup from "yup";
 const validationSchema = Yup.object({
   email: Yup.string()
-    .required('Le champ e-mail est obligatoire')
-    .email('Veuillez fournir un email valide'),
-  password: Yup.string().required('Le champ password est obligatoire'),
-  organisation: Yup.string().required('Le champ organisation est obligatoire'),
-  mobile: Yup.string().required('Le champ Telephone est obligatoire'),
-  name: Yup.string().required('Le champ Nom est obligatoire'),
-})
+    .required("Le champ e-mail est obligatoire")
+    .email("Veuillez fournir un email valide"),
+  password: Yup.string().required("Le champ password est obligatoire"),
+  organisation: Yup.string().required("Le champ organisation est obligatoire"),
+  mobile: Yup.string().required("Le champ Telephone est obligatoire"),
+  name: Yup.string().required("Le champ Nom est obligatoire"),
+});
 type signUpProps = {
-  handleSignUp?: any
-  error?: any
-}
+  handleSignUp?: any;
+  error?: any;
+};
 const SignUpform = ({ handleSignUp, error }: signUpProps) => {
   return (
     <>
@@ -34,11 +34,11 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
           </div>
           <Formik
             initialValues={{
-              email: '',
-              name: '',
-              organisation: '',
-              mobile: '',
-              password: '',
+              email: "",
+              name: "",
+              organisation: "",
+              mobile: "",
+              password: "",
             }}
             validationSchema={validationSchema}
             onSubmit={async (values) => handleSignUp(values)}
@@ -163,13 +163,6 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
                       J'accepte les termes et conditions
                     </label>
                   </div>
-
-                  <div className="text-sm">
-                    <a
-                      href="#"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
-                    ></a>
-                  </div>
                 </div>
 
                 <div>
@@ -192,6 +185,6 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
         </div>
       </div>
     </>
-  )
-}
-export default SignUpform
+  );
+};
+export default SignUpform;

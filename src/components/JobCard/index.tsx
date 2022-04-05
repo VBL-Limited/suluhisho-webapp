@@ -1,17 +1,10 @@
-import job from '../../img/job.jpeg'
-import { useState } from 'react'
-import { Jobs } from '../../constants/stub'
-import { Jobstype } from '../../types'
+import job from "../../img/job.jpeg";
+import { Jobstype } from "../../types";
 type jobTypes = {
-  jobs?: any
-  handleApply?: any
-}
+  jobs?: any;
+  handleApply?: any;
+};
 const JobCard = ({ jobs, handleApply }: jobTypes) => {
-  const [currentOffer, setCurrentOffer] = useState(true)
-
-  const handleJobOffers = () => {
-    setCurrentOffer(false)
-  }
   return (
     <>
       <div className="">
@@ -31,7 +24,7 @@ const JobCard = ({ jobs, handleApply }: jobTypes) => {
                 />
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
+                    href="/jobs"
                     className="flex items-center justify-center w-full px-8 py-2 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md hover:bg-indigo-700 md:py-3 md:text-lg md:px-10 hover:text-white"
                   >
                     Trouver un emploi
@@ -72,7 +65,7 @@ const JobCard = ({ jobs, handleApply }: jobTypes) => {
                     </div>
                     <div className="flex flex-col items-center justify-center p-2">
                       <div>
-                        <img src={job} className="h-10" />
+                        <img src={job} className="h-10" alt="job-post-logo" />
                       </div>
                       <span className="text-xl font-bold text-indigo-600">
                         {poste}
@@ -88,7 +81,7 @@ const JobCard = ({ jobs, handleApply }: jobTypes) => {
                       </button>
                     </div>
                   </div>
-                ),
+                )
               )}
           </div>
           <div className="flex justify-center mt-1 mb-20">
@@ -99,6 +92,6 @@ const JobCard = ({ jobs, handleApply }: jobTypes) => {
         </div>
       </div>
     </>
-  )
-}
-export default JobCard
+  );
+};
+export default JobCard;

@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="mt-8 sm:mt-8 lg:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div className="pt-10 rounded-md shadow">
               <a
-                href="#"
+                href="/get-started"
                 className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
               >
                 Comment ça marche
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
             <div className="pt-10 mt-3 border-2 sm:mt-0 sm:ml-3 ">
               <a
-                href="#"
+                href="/essaie"
                 className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-indigo-700 bg-indigo-100 border border-2 border-transparent border-indigo-600 rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
               >
                 Essai gratuit
@@ -39,6 +39,6 @@ const Hero = () => {
         </div>
       </main>
     </>
-  )
-}
-export default Hero
+  );
+};
+export default Hero;
