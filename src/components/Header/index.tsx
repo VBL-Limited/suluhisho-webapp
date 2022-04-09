@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../../img/Logo.png";
 const Header = () => {
   return (
     <>
@@ -7,8 +8,8 @@ const Header = () => {
         <nav className="py-2 bg-white md:py-4">
           <div className="container px-4 mx-auto md:flex md:items-center">
             <div className="flex items-center justify-between ">
-              <a href="/" className="text-3xl font-bold text-indigo-600 mr-9">
-                Suluhisho-RH business
+              <a href="/" className="text-3xl font-bold focus:mr-9">
+                <img src={Logo} alt="Logo" />
               </a>
             </div>
 
@@ -45,13 +46,13 @@ const Header = () => {
                 </NavLink>
                 <NavLink
                   to="/login"
-                  className="p-2 text-center text-indigo-600 transition-colors duration-300 border border-transparent rounded lg:px-4 md:mx-2 hover:bg-indigo-100 hover:text-indigo-700"
+                  className="p-2 text-center text-primary transition-colors duration-300 border border-transparent rounded lg:px-4 md:mx-2 hover:bg-indigo-100 hover:text-primary"
                 >
                   Se connecter
                 </NavLink>
                 <NavLink
                   to="/signUp"
-                  className="p-2 mt-1 text-center text-indigo-600 transition-colors duration-300 border border-indigo-600 border-solid rounded lg:px-4 md:mx-2 hover:bg-indigo-600 hover:text-white md:mt-0 md:ml-1"
+                  className="p-2 mt-1 text-center text-primary transition-colors duration-300 border border-primary border-solid rounded lg:px-4 md:mx-2 hover:bg-primary hover:text-white md:mt-0 md:ml-1"
                 >
                   Creer un compte
                 </NavLink>
