@@ -1,4 +1,4 @@
-import slide2 from "../../img/slide3.jpg";
+import slide2 from "../../img/slide23.png";
 const Hero = () => {
   return (
     <>
