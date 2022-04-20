@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../../img/m2.jpeg";
+// import Logo from "../../img/m2.jpeg";
 const Header = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const Header = () => {
           <div className="container px-4 mx-auto md:flex md:items-center">
             <div className="flex items-center justify-between ">
               <a href="/" className="text-3xl font-bold focus:mr-9">
-                <img src={Logo} alt="Logo" />
+                {/* <img src={Logo} alt="Logo" /> */}
               </a>
             </div>
 
