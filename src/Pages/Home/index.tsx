@@ -57,20 +57,20 @@ const Home = () => {
   return (
     <>
       <Hero />
-      {!jobs && <div>Pas d'offres disponible!</div>}
-      {loading ? (
+      {/* {loading ? (
         <div className="flex items-center justify-center ">
           <div className="w-20 h-20 border-b-4 border-indigo-600 rounded-full animate-spin"></div>
         </div>
       ) : (
-        <JobCard jobs={jobs} handleApply={handleAppy} />
-      )}
-      <Notification
+       
+      )} */}
+      <JobCard />
+      {/* <Notification
         isError={isLogedin}
         handleClose={handleClose}
         status={status}
         message={statusMessage}
-      />
+      /> */}
     </>
   );
 };

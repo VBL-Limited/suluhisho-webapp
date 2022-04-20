@@ -30,7 +30,7 @@ const Hero = () => {
             <div className="pt-10 rounded-md shadow">
               <a
                 href="/get-started"
-                className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-white bg-primary border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-white bg-primary rounded-md md:py-4 md:text-lg md:px-10"
               >
                 Comment ça marche
               </a>
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="pt-10 mt-3 sm:mt-0 sm:ml-3 ">
               <a
                 href="/essaie"
-                className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-primary bg-indigo-100 border border-2 border-transparent border-indigo-600 rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-primary bg-indigo-100  rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
               >
                 Essai gratuit
               </a>
