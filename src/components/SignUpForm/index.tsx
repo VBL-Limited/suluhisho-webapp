@@ -27,7 +27,7 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
             />
             <h2 className="mt-6 text-6xl font-extrabold text-center text-gray-900">
               Creer un compte
-              <span className="block pl-5 pr-5 text-indigo-600 xl:inline">
+              <span className="block pl-5 pr-5 text-primary xl:inline">
                 Suluhisho-RH
               </span>
             </h2>
@@ -62,7 +62,7 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
                       type="text"
                       onChange={handleChange}
                       value={values.name}
-                      className="relative block w-full px-3 py-4 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none h-13 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                      className="relative block w-full px-3 py-4 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none h-13 rounded-t-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
                       placeholder="Nom"
                     />
                     {errors.name && (
@@ -81,7 +81,7 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
                       type="email"
                       onChange={handleChange}
                       value={values.email}
-                      className="relative block w-full px-3 py-4 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none h-13 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                      className="relative block w-full px-3 py-4 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none h-13 rounded-t-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
                       placeholder="Addresse mail"
                     />
                     {errors.email && (
@@ -100,7 +100,7 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
                       type="text"
                       onChange={handleChange}
                       value={values.mobile}
-                      className="relative block w-full px-3 py-4 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none h-13 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                      className="relative block w-full px-3 py-4 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-none appearance-none h-13 rounded-t-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm"
                       placeholder="Telephone"
                     />
                     {errors.mobile && (
@@ -168,11 +168,11 @@ const SignUpform = ({ handleSignUp, error }: signUpProps) => {
                 <div>
                   <button
                     type="submit"
-                    className="relative flex justify-center w-full px-4 py-4 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md group hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="relative flex justify-center w-full px-4 py-4 text-sm font-medium text-white bg-primary border border-transparent rounded-md group hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                   >
                     <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                       <LockClosedIcon
-                        className="w-5 h-20 text-indigo-500 group-hover:text-indigo-400"
+                        className="w-5 h-20 text-primary group-hover:text-indigo-400"
                         aria-hidden="true"
                       />
                     </span>

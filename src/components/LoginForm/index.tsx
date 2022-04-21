@@ -25,7 +25,7 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
             />
             <h2 className="mt-6 text-6xl font-extrabold text-center text-gray-900">
               Se connecter a
-              <span className="block pl-5 pr-5 text-indigo-600 xl:inline">
+              <span className="block pl-5 pr-5 text-primary xl:inline">
                 Suluhisho-RH
               </span>
             </h2>
@@ -33,7 +33,7 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
               Ou{" "}
               <a
                 href="/essaie"
-                className="font-medium text-indigo-600 hover:text-indigo-500"
+                className="font-medium text-primary hover:text-indigo-500"
               >
                 essayer gratuitement pendant 14jours
               </a>
@@ -102,7 +102,7 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
                       id="remember-me"
                       name="remember-me"
                       type="checkbox"
-                      className="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                      className="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary"
                     />
                     <label
                       htmlFor="remember-me"
@@ -115,7 +115,7 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
                   <div className="text-sm">
                     <a
                       href="/forgot-password"
-                      className="font-medium text-indigo-600 hover:text-indigo-500"
+                      className="font-medium text-primary hover:text-primary"
                     >
                       Mot de passe oublie ?
                     </a>
@@ -123,17 +123,17 @@ const Loginform = ({ handleLogin, error, loading }: loginProps) => {
                 </div>
                 {loading ? (
                   <div className="flex items-center justify-center ">
-                    <div className="w-20 h-20 border-b-4 border-indigo-600 rounded-full animate-spin"></div>
+                    <div className="w-20 h-20 border-b-4 border-primary rounded-full animate-spin"></div>
                   </div>
                 ) : (
                   <div>
                     <button
                       type="submit"
-                      className="relative flex justify-center w-full px-4 py-4 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      className="relative flex justify-center w-full px-4 py-4 text-sm font-medium text-white bg-primary border border-transparent rounded-md hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                     >
                       <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                         <LockClosedIcon
-                          className="w-5 h-20 text-indigo-500 group-hover:text-indigo-400"
+                          className="w-5 h-20 text-primary group-hover:text-primary"
                           aria-hidden="true"
                         />
                       </span>

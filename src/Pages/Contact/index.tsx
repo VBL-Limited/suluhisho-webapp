@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <div className="py-5 bg-indigo-600 md:py-7 lg:py-14">
+      <div className="py-5 bg-primary md:py-7 lg:py-14">
         <div className="container px-5 mx-auto xl:max-w-screen-xl">
           <h1 className="text-3xl font-bold text-center text-white md:text-4xl">
             Contactez-nous!
@@ -16,7 +16,7 @@ const Contact = () => {
                 <div className="flex items-center sm:flex-col sm:text-center">
                   <div className="flex items-center justify-center flex-shrink-0 mr-5 bg-white rounded w-11 h-11 sm:mr-0">
                     <svg
-                      className="text-indigo-600 w-7 h-7"
+                      className="text-primary w-7 h-7"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
                       viewBox="0 0 16 16"
@@ -32,7 +32,7 @@ const Contact = () => {
                 <div className="flex items-center sm:flex-col sm:text-center">
                   <div className="flex items-center justify-center flex-shrink-0 mr-5 bg-white rounded w-11 h-11 sm:mr-0">
                     <svg
-                      className="text-blue-600 w-7 h-7"
+                      className="text-primary w-7 h-7"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
                       viewBox="0 0 16 16"
@@ -126,7 +126,7 @@ const Contact = () => {
                   required
                 ></textarea>
               </label>
-              <button className="w-full px-5 py-3 font-medium text-white bg-indigo-600 rounded focus:outline-none">
+              <button className="w-full px-5 py-3 font-medium text-white bg-primary rounded focus:outline-none">
                 Envoyer
               </button>
             </form>
@@ -134,6 +134,6 @@ const Contact = () => {
         </div>
       </div>
     </>
-  )
-}
-export default Contact
+  );
+};
+export default Contact;
