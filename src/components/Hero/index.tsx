@@ -29,7 +29,7 @@ const Hero = () => {
           <div className="mt-8 sm:mt-8 lg:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div className="pt-10 rounded-md shadow">
               <a
-                href="/get-started"
+                href="/signUp"
                 className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-white bg-primary rounded-md md:py-4 md:text-lg md:px-10"
               >
                 Comment ça marche
@@ -37,7 +37,7 @@ const Hero = () => {
             </div>
             <div className="pt-10 mt-3 sm:mt-0 sm:ml-3 ">
               <a
-                href="/essaie"
+                href="/signUp"
                 className="flex items-center justify-center w-full px-8 py-6 text-base font-medium text-primary bg-indigo-100  rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
               >
                 Essai gratuit

@@ -6,10 +6,10 @@ const Contact = () => {
           <h1 className="text-3xl font-bold text-center text-white md:text-4xl">
             Contactez-nous!
           </h1>
-          <p className="max-w-lg mx-auto mt-2.5 text-center text-gray-100 md:text-lg">
+          {/* <p className="max-w-lg mx-auto mt-2.5 text-center text-gray-100 md:text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             sodales interdum sapien non pretium.
-          </p>
+          </p> */}
           <div className="mt-5 md:mt-7 lg:mt-14">
             <div className="flex justify-center">
               <div className="space-y-5 sm:max-w-screen-sm sm:w-full sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-5 md:gap-7">
@@ -56,7 +56,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="break-all text-white sm:mt-2.5">
-                    info@suluhisho-rh.com
+                    info@vbl-limited.com
                   </div>
                 </div>
               </div>
