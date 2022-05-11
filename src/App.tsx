@@ -1,9 +1,8 @@
-import React from 'react'
-import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Footer, Header, HeaderAdmin } from './components'
-import Dashboard from './screens/Home'
-import { useEffect } from 'react'
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header } from "./components";
+import Dashboard from "./screens/Home";
 import {
   Home,
   About,
@@ -13,22 +12,13 @@ import {
   Pricing,
   Post,
   AddJob,
-} from './Pages'
-import { getToken } from './api/User'
+} from "./Pages";
 
-const App = (props: any) => {
-  const token = getToken()
-  // const navigate = useNavigate()
-  // if (!token) {
-  //   navigate('/login')
-  // }
-  useEffect(() => {}, [token])
-
+const App = () => {
   return (
     <>
       <BrowserRouter>
-        {token ? <HeaderAdmin /> : <Header />}
-
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -41,9 +31,8 @@ const App = (props: any) => {
           <Route path="/*" element={<Home />} />
           <Route path="/home" element={<Dashboard />} />
         </Routes>
-        {!token ? <Footer /> : null}
       </BrowserRouter>
     </>
-  )
-}
-export default App
+  );
+};
+export default App;

@@ -1,14 +1,14 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
-import Grid from "@mui/material/Grid";
-import LinearProgress, {
+import {
+  Grid,
+  Stack,
+  Typography,
+  CardContent,
+  CardActions,
+  LinearProgress,
+  Card,
+  styled,
   linearProgressClasses,
-} from "@mui/material/LinearProgress";
-import { styled } from "@mui/material/styles";
+} from "@mui/material/";
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 10,
@@ -22,13 +22,11 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "light" ? "#1a90ff" : "#308fe8",
   },
 }));
-type jobTypes = {
-  jobs?: any;
-  handleApply?: any;
-};
-const JobCard = ({ jobs, handleApply }: jobTypes) => {
+
+const JobCard = () => {
   return (
     <>
+      <Grid container justifyContent="center"></Grid>
       <Grid container spacing={2} sx={{ px: 2, pt: 2 }}>
         <Grid item xs={12} md={4}>
           <Card>
